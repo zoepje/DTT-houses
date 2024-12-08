@@ -16,10 +16,12 @@
   header {
     position: fixed;
     bottom: 0;
+    width: 100vw;
   }
 
   main {
     height: 100vh;
+    margin: 1rem;
   }
 
   @media only screen and (min-width: 600px){

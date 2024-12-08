@@ -60,6 +60,7 @@
 
 body {
   font: var(--body-text-m);
+  background-color: var(--background-color-1);
 }
 
 h1 {
