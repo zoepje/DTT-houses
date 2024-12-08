@@ -9,6 +9,77 @@
   src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
 
-body{
-  font-family: "Montserrat";
+@font-face {
+  font-family: "OpenSans";
+  src: url(./fonts/OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+:root {
+  /* colors */
+  --primariy-color: #EB5440;
+  --secondary-color: #4A4B4C;
+  --tertiary-color: #E8E8E8;
+  --quariary-color: #C3C3C3;
+
+  --background-color-1: #F6F6F6;
+  --background-color-2: #FFFFFF;
+
+  --primariy-text-color: #000000;
+  --secondary-text-color: #4A4B4C;
+  --hyperlink: #067BC2;
+
+  /* fonts */
+  --header1-d: bold 32px "Montserrat", sans-serif;
+  --header1-m: bold 18px "Montserrat", sans-serif;
+  --header2-d: bold 22px "Montserrat", sans-serif;
+  --header2-m: bold 14px "Montserrat", sans-serif;
+  --header-active: bold 18px "Montserrat", sans-serif;
+  --header-inactive: 500 18px "Montserrat", sans-serif;
+
+  --body-text-d: 18px "OpenSans", sans-serif;
+  --body-text-m: 12px "OpenSans", sans-serif;
+
+  --listing-info-d: 600 16px "OpenSans", sans-serif;
+  --listing-info-m: 600 12px "OpenSans", sans-serif;
+
+  --buttons-tabs-d: bold 18px "Montserrat", sans-serif;
+  --buttons-tabs-m: bold 12px "Montserrat", sans-serif;
+  --back-button: 600 16px "Montserrat", sans-serif;
+
+  --input-title-d: 600 14px "Montserrat", sans-serif;
+  --input-title-m: 600 12px "Montserrat", sans-serif;
+  --input-text-d: 14px "OpenSans", sans-serif;
+  --input-text-m: 12px "OpenSans", sans-serif;
+
+  --empty-state-msg-d: 500 18px "Montserrat", sans-serif;
+  --empty-state-msg-m: 500 14px "Montserrat", sans-serif;
+
+  --error-msg-d: italic 500 14px "Montserrat", sans-serif;
+  --error-msg-m: italic 500 12px "Montserrat", sans-serif;
+}
+
+body {
+  font: var(--body-text-m);
+}
+
+h1 {
+  font: var(--header1-m);
+}
+
+h2 {
+  font: var(--header2-m);
+}
+
+@media only screen and (min-width: 600px){
+  body {
+    font: var(--body-text-d);
+  }
+
+  h1 {
+    font: var(--header1-d);
+  }
+
+  h2 {
+    font: var(--header2-d);
+  }
 }
